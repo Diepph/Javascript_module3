@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="target"></p>
+
+    <script>
+        const numbers = [];
+        for (let index = 0; index < 5; index++) {
+            const num = prompt('Enter the number: ');
+            numbers.push(num)
+        }
+
+        for (let index = 4; index >=0; index--) {
+            console.log(numbers[index]);
+        }
+        document.getElementById("target").innerHTML = numbers;
+    </script>
+</body>
+</html>
